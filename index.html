@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReportCard</title>
+    <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+   
+    <div class="report" id="makepdf">
+        <div id="header">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-xxSiEzPFXB8uc53ss2PdVK9L8ho8_F1Msw&usqp=CAU" id="logoimg" alt="School Logo">
+            <h1>Kendriya Vidhyalaya Indore</h1>
+            <h3>Sector-24 Palasia, Indore</h3>
+            <h2>Report Card (2022-2023)</h2> 
+            <button id="button">Generate PDF</button>
+        </div>
+        <div id="report">
+                <table class="tb">
+                    <tr>
+                        <th>Student name</th>
+                        <td><input type="text" id="sname" name="sname" placeholder="Studen Name"></td>
+                        
+                        <th>Roll No</th>
+                        <td><input type="text" id="rollno" name="rollno" maxlength="2" placeholder="Roll number"></td>
+                    </tr>
+                    <tr>
+                        <th>Class</th>
+                        <td><input type="text" id="class" name="class" placeholder="Class"></td>
+                    
+                        <th>Attendence</th>
+                        <td><input type="text" id="atten" name="atten" maxlength="2" placeholder="Attendence"></td>
+                    </tr>
+                </table><br>
+                <table class="tb1" >
+                    <tr>
+                            <th class="text">Sr. No</th>
+                            <th class="text">Subject Name</th>
+                            <th class="text">Class Test I</th>
+                            <th class="text">Class Test II</th>
+                            <th class="text">Half Yearly</th>
+                            <th class="text">Annual</th>
+                            <th class="text">Grade</th>
+
+                    </tr>
+                    <tr>
+                        <th>1</th>
+                        <th>English</th>
+                        <td><input type="text" id="enct1" name="enct1" maxlength="10" placeholder=""></td>
+                        <td><input type="text" id="enct2" name="enct2" maxlength="10" placeholder=""></td>
+                        <td><input type="text" id="enhl" name="enhl" maxlength="10" placeholder=""></td>
+                        <td><input type="text" id="enann" name="enann" maxlength="10" placeholder=""></td>
+                        <td><input type="text" id="engr" name="engr" maxlength="10" placeholder=""></td>
+
+                    </tr>
+                    <tr>
+                        <th>2</th>
+                        <th>Hindi</th>
+                        <td><input type="text" id="hict1" name="hict1" maxlength="10" placeholder=""></td>
+                        <td><input type="text" id="hict2" name="hict2" maxlength="10" placeholder=""></td>
+                        <td><input type="text" id="hihl" name="hihl" maxlength="10" placeholder=""></td>
+                        <td><input type="text" id="hann" name="hiann" maxlength="10" placeholder=""></td>
+                        <td><input type="text" id="higr" name="higr" maxlength="10" placeholder=""></td>
+
+
+                    </tr>
+                    <tr>
+                        <th>3</th>
+                        <th>EVS</th>
+                        <td><input type="text" id="evct1" name="evct1" maxlength="10" placeholder=""></td>
+                        <td><input type="text" id="evct2" name="evct2" maxlength="10" placeholder=""></td>
+                        <td><input type="text" id="evhl" name="evhl" maxlength="10" placeholder=""></td>
+                        <td><input type="text" id="evann" name="evann" maxlength="10" placeholder=""></td>
+                        <td><input type="text" id="evgr" name="evgr" maxlength="10" placeholder=""></td>
+
+
+                    </tr>
+                    <tr>
+                        <th>4</th>
+                        <th>Social Science</th>
+                        <td><input type="text" id="ssct1" name="ssct1" maxlength="10" placeholder=""></td>
+                        <td><input type="text" id="ssct2" name="ssct2" maxlength="10" placeholder=""></td>
+                        <td><input type="text" id="sshl" name="sshl" maxlength="10" placeholder=""></td>
+                        <td><input type="text" id="ssann" name="ssann" maxlength="10" placeholder=""></td>
+                        <td><input type="text" id="ssgr" name="ssgr" maxlength="10" placeholder=""></td>
+
+
+                    </tr>
+                    <tr>
+                        <th>5</th>
+                        <th>Mathematics</th>
+                        <td><input type="text" id="mct1" name="mct1" maxlength="10" placeholder=""></td>
+                        <td><input type="text" id="mct2" name="mct2" maxlength="10" placeholder=""></td>
+                        <td><input type="text" id="mhl" name="mhl" maxlength="10" placeholder=""></td>
+                        <td><input type="text" id="mann" name="mann" maxlength="10" placeholder=""></td>
+                        <td><input type="text" id="mgr" name="mgr" maxlength="10" placeholder=""></td>
+
+
+                    </tr>
+                    <tr>
+                        <th>6</th>
+                        <th>German</th>
+                        <td><input type="text" id="gct1" name="gct1" maxlength="10" placeholder=""></td>
+                        <td><input type="text" id="gct2" name="gct2" maxlength="10" placeholder=""></td>
+                        <td><input type="text" id="ghl" name="ghl" maxlength="10" placeholder=""></td>
+                        <td><input type="text" id="gann" name="gann" maxlength="10" placeholder=""></td>
+                        <td><input type="text" id="ggr" name="ggr" maxlength="10" placeholder=""></td>
+
+
+                    </tr>
+                    <tr >
+                        <th class="text"colspan="2">Total Marks</th>
+                        <td colspan="4"><input type="text" id="totalm" name="totalm" maxlength="10" placeholder="Total Marks"></td>
+                        <td><input type="text" id="tgrade" name="tgrade" maxlength="10" placeholder="Total Grades"></td>
+                        
+
+                    </tr>
+                    <tr>
+                        <th class="text" colspan="2">Total Percentage</th>
+                        <td colspan="5"><input type="text" id="totalp" name="totalp" maxlength="10" placeholder="Percentage"></td>
+                    
+
+                    </tr>
+                </table>
+                <br>
+                <table class="tb2" >
+                    <tr>
+                        <th class="text">Extras</th>
+                        <th class="text">Grades</th>
+                    </tr>
+                    <tr>
+                        <td class="text">Reading</td>
+                        <td><input type="text" id="read" name="read" maxlength="10" placeholder=""></td>
+                    </tr>
+                    <tr>
+                        <td class="text">Writing</td>
+                        <td><input type="text" id="write" name="write" maxlength="10" placeholder=""></td>
+                    </tr>
+                    <tr>
+                        <td class="text">Speaking</td>
+                        <td><input type="text" id="speak" name="speak" maxlength="10" placeholder=""></td>
+                    </tr>
+                </table>
+        </div>
+        <div id="analysis">
+                Graph 
+            
+        </div> 
+        <div id="footer">
+                <table class="tb3">
+                    <tr><th class="text">Class Teacher's Comment</th></tr>
+                    <tr><td><input type="text" id="" name="" maxlength="10" placeholder=""></td></tr>
+                </table><br>
+                <table class="tb4" >
+                    <tr><th class="text">Grade Boundaries</th></tr>
+                    <tr><td id="grbound"> A+:100-90, A:90-80, B:80-70, C:70-60, D:60-50, E:50-40</td></tr>
+                </table>
+        </div>
+    </div>
+
+
+    <script>
+        var button = document.getElementById("button");
+        var makepdf = document.getElementById("makepdf");
+    
+        button.addEventListener("click", function () {
+            var mywindow = window.open("", "PRINT",
+                    "height=400,width=600");
+    
+            mywindow.document.write(makepdf.innerHTML);
+    
+            mywindow.document.close();
+            mywindow.focus();
+    
+            mywindow.print();
+            mywindow.close();
+    
+            return true;
+        });
+    </script>
+</body>
+</html>

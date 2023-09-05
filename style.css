@@ -1,0 +1,118 @@
+
+
+body{
+    font-size: small;
+    justify-content: center; 
+    align-items: center;
+    background-color: rgb(238, 253, 184);
+    margin-left:20%;
+    width:60%
+    
+  }
+#logoimg{
+    width: 100px;
+    height: 100px;
+    float: left;
+    padding:20px;
+}
+
+
+h1{
+    color: rgb(27, 16, 77);
+    text-align: left;
+    text-indent: 20%;
+}   
+
+h3{
+    color: rgb(27, 16, 77);
+    text-align: left;
+    text-indent: 30%;
+}
+
+h2{
+    color: rgb(27, 16, 77);
+    text-align: left;
+    text-indent: 25%;
+}
+button{
+    margin-left: 550px;
+}
+#header{
+    border: 1px black solid;
+    text-align: center;
+    background-color: lightblue;
+}
+#report{
+    border: 1px black solid;
+    padding:10px;
+    background-color: white;
+    justify-content: center; 
+    align-items: center;
+  }
+
+#footer{
+    border: 1px black solid;
+    background-color: lightblue;
+    justify-content: center; 
+    align-items: center;
+    padding:10px;
+  }
+
+#analysis{
+    border: 1px black solid;
+    background-color: white;
+    justify-content: center; 
+    align-items: center;
+    padding:10px;
+  }
+input{
+    background-color: rgb(238, 234, 234);
+    width: 95%;
+    border: 1px inset;
+}
+
+#totalm{
+    background-color: rgb(204, 230, 238);
+    width: 98%;
+}
+#tgrade{
+    background-color:rgb(204, 230, 238);
+    width: 95%;
+}
+#totalp{
+    background-color: rgb(204, 230, 238);
+    width: 98%;
+}
+
+#grbound{
+    text-align: center;
+    font-size: medium;
+}
+
+#read,#write,#speak{
+    width: 98%;
+}
+.text{
+    background-color: rgb(215, 223, 235);
+  }
+table{
+    border: 2px rgb(118, 203, 230) solid;
+    padding: 20px;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+th{
+    border: 2px rgb(108, 109, 109) solid;
+    background-color: rgb(235, 246, 250);
+    padding: 6px;
+    border-collapse: collapse;
+    width: auto;
+}
+td{
+    border: 2px rgb(108, 109, 109) solid;
+    padding :5px;
+    align-content: center;
+    border-collapse: collapse;
+}
